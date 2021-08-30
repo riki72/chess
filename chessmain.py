@@ -2,9 +2,11 @@ from lib.engine import Engine
 
 engine = Engine()
 
-engine.print_board()
-engine.move_piece('a', 5, 'c', 5)
-engine.print_board()
+while engine.victory == False : 
+    engine.print_board()
+    engine.move_piece(input('start x '),int(input('start y ')), input('target x '), int(input('target y ')))
+    engine.print_board()
+    continue
 
 
 
